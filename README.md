@@ -17,6 +17,7 @@ If the primary key value is present in the database, display that data in the fo
 2.Click on [Update] button to update the data in the database and go to step-2.
 3.Click [Reset] to reset the form as per the step-2.
 
+
 **Benefits of using JsonPowerDB**
 →Nimble, Simple to use, In Memory, Real-time
 →Schema free - easy to maintain.
@@ -29,55 +30,75 @@ If the primary key value is present in the database, display that data in the fo
 →Multiple security layers
 →Server Side Native NoSQL - best performance.
 
+
 **Release History (release of your JsonPowerDB related code on Github)**
+
 **PUT**
 {
     "token": "90938136|-31949272997588755|90955123",
     "cmd": "PUT",
-    "dbName": "Student",
-    "rel": "Exmp-Rel",
+    "dbName": "Emplyoee",
+    "rel": "Emp-Rel",
     "jsonStr": {
         "id": "1",
-        "name": "Sneha",
-        "email": "sneha.yehduri@gmail.com",
-        "mobileno": "9967826666"
+        "name": "Snonya",
+        "email": "snonya@gmail.com",
+        "mobileno": "8554485646"
     }
 }
+
+
+**GET**
+{
+    "token": "90938136|-31949272997588755|90955123",
+    "cmd": "GET",
+    "dbName": "Emplyoee",
+    "rel": "Emp-Rel",
+    "jsonStr": {
+        "id": "1",
+        "name": "Snonya",
+        "email": "snonya@gmail.com",
+        "mobileno": "8554485646"
+    }
+}
+
 **UPDATE**
+
 {
     "token": "90938136|-31949272997588755|90955123",
     "cmd": "UPDATE",
-    "dbName": "Student",
-    "rel": "Exmp-Rel",
+    "dbName": "Employee",
+    "rel": "Exp-Rel",
     "jsonStr": {
       "1":{
-        "name": "Sumit",
-        "email": "sumit@gmail.com"
+        "name": "Snonya",
+        "email": "snonya@gmail.com"
       } 
-      "2":{
-        "name": "Gargee Mishra"
-      }
    }
 }
+
 **REMOVE** 
+
 {
     "token": "90938136|-31949272997588755|90955123",
     "cmd": "REMOVE",
-    "dbName": "Student",
-    "rel": "Exmp-Rel",
+    "dbName": "Employee",
+    "rel": "Emp-Rel",
     "record": 1,
     "jsonStr" : {}
 }
+
 **GET_BY_KEY**
+
 {
     "token": "90938136|-31949272997588755|90955123",
-    "dbName": "Student",
+    "dbName": "Employee",
     "cmd": "GET_BY_KEY",
-    "rel": "Exmp-Rel",
+    "rel": "Exp-Rel",
     "createTime": true,
     "updateTime": true,
     "jsonStr": {
-        "name": "Sneha"
+        "name": "Snonya"
     }
 
 }
